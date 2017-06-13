@@ -503,3 +503,10 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+@media (max-width: 768px){
+  iframe {
+    width: 100%;
+    height: auto;
+    min-height: 420px;
+  }
+}
