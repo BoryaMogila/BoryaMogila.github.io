@@ -1,6 +1,6 @@
 (function () {
     if (!navigator.serviceWorker) return;
-    navigator.serviceWorker.register('/sw.js?v=4').then(function(registration) {
+    navigator.serviceWorker.register('/sw.js?v=5').then(function(registration) {
         // Registration was successful
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }).catch(function(err) {
