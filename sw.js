@@ -1,5 +1,5 @@
 var staticCacheName = 'borya-static-v3';
-var contentImgsCache = 'borya-content-imgs-v5';
+var contentImgsCache = 'borya-content-imgs-v6';
 var allCaches = [
     staticCacheName,
     contentImgsCache
@@ -49,7 +49,7 @@ self.addEventListener('fetch', function(event) {
     var requestUrl = new URL(event.request.url);
     if (requestUrl.origin === location.origin) {
         if (requestUrl.pathname === '/') {
-            event.respondWith(caches.match('/index.html'));
+          event.respondWith(serveStatic(new Request('/index.html')));
             return;
         }
         if (requestUrl.pathname.startsWith('/public/img/')) {
