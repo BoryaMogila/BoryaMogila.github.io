@@ -1,5 +1,5 @@
-var staticCacheName = 'borya-static-v3';
-var contentImgsCache = 'borya-content-imgs-v6';
+var staticCacheName = 'borya-static-v4';
+var contentImgsCache = 'borya-content-imgs-v7';
 var allCaches = [
     staticCacheName,
     contentImgsCache
