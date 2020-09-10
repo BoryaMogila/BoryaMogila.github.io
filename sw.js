@@ -45,7 +45,7 @@ self.addEventListener('activate', function(event) {
     );
 });
 
-self.addEventListener('fetch', function(event) {
+/* self.addEventListener('fetch', function(event) {
     var requestUrl = new URL(event.request.url);
     if (requestUrl.origin === location.origin) {
         if (requestUrl.pathname === '/') {
@@ -83,7 +83,7 @@ self.addEventListener('fetch', function(event) {
             console.log(error)
         })
     );
-});
+}); */
 function servePhoto(request) {
     return caches.open(contentImgsCache).then(function(cache) {
         return cache.match(request.url).then(function(response) {
